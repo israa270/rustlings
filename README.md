@@ -1,7 +1,7 @@
 Note:
  -- Not Solve--
- thread1 ,thread2, thread3
- clippy3
+ #### thread1 ,thread2, thread3
+ #### clippy3
  -----------------------
 # rustlings 🦀❤️
 
