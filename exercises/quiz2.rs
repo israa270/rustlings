@@ -39,6 +39,7 @@ mod my_module {
                 Command::Uppercase =>  output.push(string.to_uppercase()),
                 Command::Trim => output.push(string.trim().to_string()),
                 Command::Append(u) => output.push(string.repeat(*u+1).to_string())
+                // Command::Append(u) =>std::iter::repeat("bar").take(*u).collect::<String>(),
             };
            
         }
