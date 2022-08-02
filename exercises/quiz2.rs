@@ -18,7 +18,7 @@
 // - The output element is going to be a Vector of strings.
 // Execute `rustlings hint quiz2` or use the `hint` watch subcommand for a hint.
 
-
+ 
 
 pub enum Command {
     Uppercase,
@@ -38,8 +38,9 @@ mod my_module {
             match command{
                 Command::Uppercase =>  output.push(string.to_uppercase()),
                 Command::Trim => output.push(string.trim().to_string()),
-                Command::Append(u) => output.push(string.repeat(*u+1).to_string())
-                // Command::Append(u) =>std::iter::repeat("bar").take(*u).collect::<String>(),
+                Command::Append(u) => {
+                   output.push(format!("{}{}", string, "bar".to_owned().repeat(*u)))
+                }
             };
            
         }
@@ -63,7 +64,7 @@ mod tests {
         ]);
         assert_eq!(output[0], "HELLO");
         assert_eq!(output[1], "all roads lead to rome!");
-        // assert_eq!(output[2], "foobar");
+        assert_eq!(output[2], "foobar");
         assert_eq!(output[3], "barbarbarbarbarbar");
     }
 }

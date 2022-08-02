@@ -1,3 +1,8 @@
+Note:
+ -- Not Solve--
+ thread1 ,thread2, thread3
+ clippy3
+ -----------------------
 # rustlings 🦀❤️
 
 Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
